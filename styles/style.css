@@ -36,3 +36,43 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  margin: 133px 30px;
+  display: grid;
+  justify-content: end;
+  align-items: end;
+  grid-template-columns: 711px 399px;
+  gap: 30px;
+}
+
+.result {
+  grid-column: 1/2;
+}
+
+.content__details {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 16px;
+  
+}
+
+.content__list {
+  margin-block-start: 26px;
+  height: 298px;
+  overflow-y: scroll;
+}
+
+.content__video-card-thumbnail {
+  width: 100%;
+}
+
+
+
+
