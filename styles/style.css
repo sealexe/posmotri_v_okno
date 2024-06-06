@@ -15,7 +15,7 @@ html {
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  background-color: #1b1919;
+  background-color: #1B1919;
 }
 
 h1,
@@ -59,14 +59,25 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  margin-block-start: 16px;
-  
 }
 
 .content__list {
   margin-block-start: 26px;
   height: 298px;
   overflow-y: scroll;
+}
+
+.result__video-container {
+  height: 386px;
+  width: 100%;
+  margin-block-start: 78px;
+  margin-block-end: 16px;
+}
+
+.result__video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .content__video-card-thumbnail {
