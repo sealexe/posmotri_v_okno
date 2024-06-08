@@ -39,6 +39,7 @@ ol {
 
 .content {
   margin: 133px 30px;
+  max-height: 534px;
   display: grid;
   justify-content: end;
   align-items: end;
@@ -50,24 +51,8 @@ ol {
   grid-column: 1/2;
 }
 
-.content__details {
-  grid-column: 2/3;
-  display: flex;
-  flex-direction: column;
-}
-
-.search-form {
-  display: flex;
-  justify-content: space-between;
-}
-
-.content__list {
-  margin-block-start: 26px;
-  height: 298px;
-  overflow-y: scroll;
-}
-
 .result__video-container {
+  position: relative;
   height: 386px;
   width: 100%;
   margin-block-start: 78px;
@@ -80,10 +65,98 @@ ol {
   object-fit: cover;
 }
 
-.content__video-card-thumbnail {
-  width: 100%;
+.search-form {
+  display: flex;
+  min-height: 54px;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+.content__details {
+  grid-column: 2/3;
+  max-height: 534px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  position: relative;
+  margin-block-start: 26px;
+  height: 298px;
+  overflow-y: scroll;
+}
+
+.content__list-item:not(:last-child) {
+  margin-block-end: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  min-height: 107px;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+  max-width: 200px;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-block-end: 6px;
+}
+
+.content__video-card-description {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
 
 
