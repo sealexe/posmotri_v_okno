@@ -57,6 +57,8 @@ ol {
   gap: 30px;
 }
 
+/* Видео */
+
 .result {
   grid-column: 1/2;
 }
@@ -75,18 +77,19 @@ ol {
   object-fit: cover;
 }
 
+/* Форма поиска */
+
 .search-form {
   display: flex;
   height: 54px;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 .search-form__fieldset {
   display: grid;
   gap: 5px;
   border: none;
-  width: 225px;
   height: 100%;
 }
 
@@ -107,13 +110,36 @@ ol {
   font-size: 18px;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);
-  width: 100%;
+  width: 225px;
   background-color: transparent;
   border: 1px solid #FFFF;
   border-inline-start: none;
   border-inline-end: none;
   appearance: none;
 }
+
+.search-form__checkbox-list {
+  display: flex;
+  justify-content: space-between;
+  width: 212px;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #FFFFFF;
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+/* Детали */
 
 .content__details {
   grid-column: 2/3;
@@ -138,8 +164,11 @@ ol {
 
 .content__list {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-block-start: 26px;
-  height: 298px;
+  min-height: 298px;
   overflow-x: hidden;
 }
 
@@ -201,4 +230,27 @@ ol {
   color: #FFFFFF;
 }
 
+/* Кнопки */
+
+.button {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  height: 34px;
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.search-form__submit-button {
+  width: 194px;
+}
+
+.more-button {
+  width: 100%;
+  /* margin-block-end: 1px; */
+}
 
