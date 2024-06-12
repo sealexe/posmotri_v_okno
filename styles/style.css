@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -48,12 +51,10 @@ ol {
 }
 
 .content {
-  margin: 133px 30px;
   display: grid;
   justify-content: end;
   align-items: end;
   grid-template-columns: 711px 399px;
-  grid-template-rows: 534px;
   gap: 30px;
 }
 
@@ -61,6 +62,7 @@ ol {
 
 .result {
   grid-column: 1/2;
+  padding-bottom: 2px;
 }
 
 .result__video-container {
@@ -124,12 +126,7 @@ ol {
   gap: 15px;
 }
 
-.search-form__pseudo-checkbox {
-  display: inline-block;
-  vertical-align: middle;
-  width: 19px;
-  height: 19px;
-  border: 1px solid #FFFFFF;
+.search-form__label-text {
   font-family: 'Fira Sans Condensed';
   font-style: normal;
   font-weight: 400;
@@ -138,11 +135,19 @@ ol {
   color: #FFFFFF;
 }
 
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #FFFFFF;
+}
+
 /* Детали */
 
 .content__details {
   grid-column: 2/3;
-  height: 100%;
 }
 
 .title {
@@ -170,7 +175,7 @@ ol {
 }
 
 .content__list-item {
-  width: auto;
+  width: 100%;
 }
 
 .content__list-item:not(:last-child) {
@@ -221,7 +226,7 @@ ol {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16px;
+  line-height: 16.2px;
   color: #FFFFFF;
 }
 
@@ -265,4 +270,15 @@ ol {
   outline: 1px solid #FFFFFF;
   outline-offset: 1px;
 }
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  inset: 1px;
+}
+  
 
