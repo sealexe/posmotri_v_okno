@@ -125,7 +125,6 @@ ol {
   display: flex;
   width: 212px;
   gap: 15px;
-  cursor: pointer;
 }
 
 .search-form__label-text {
@@ -137,9 +136,14 @@ ol {
   color: #FFFFFF;
 }
 
+.search-form__label {
+  cursor: pointer;
+}
+
 .search-form__pseudo-checkbox {
-  display: inline-block;
-  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   vertical-align: middle;
   width: 19px;
   height: 19px;
@@ -190,13 +194,13 @@ ol {
   justify-content: space-between;
   align-items: start;
   padding: 2px;
-  cursor: pointer;
 }
 
 .content__card-link {
   display: block;
   text-decoration: none;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .content__video-card-description-container {
@@ -297,11 +301,11 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
-  position: absolute;
+  
   width: 15px;
   height: 15px;
   background-color: #fff;
-  inset: 1px;
+  inset: 2px;
 }
 
 .search-form__pseudo-checkbox:hover ~ .search-form__label-text, .search-form__label-text:hover {
